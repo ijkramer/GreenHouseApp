@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,7 +15,7 @@ namespace GreenHouseApp
             {
                 if (database == null)
                 {
-                    database = new Models.PlantDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDoSQLite.db3"));
+                    database = new Models.PlantDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "PlantsSQLite.db3"));
                 }
                 return database;
             }
