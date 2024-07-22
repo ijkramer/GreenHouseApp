@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace GreenHouseApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddPlant : ContentPage
+    public partial class AddPlant : ObservableObject
     {
         public AddPlant()
         {
-            InitializeComponent();
+           
         }
     }
 }

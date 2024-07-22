@@ -6,6 +6,20 @@ namespace GreenHouseApp
 {
     public partial class App : Application
     {
+        static Models.PlantDatabase database;
+
+        public static Models.PlantDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new Models.PlantDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ToDoSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
         public App()
         {
             InitializeComponent();
