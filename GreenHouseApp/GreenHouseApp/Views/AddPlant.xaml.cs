@@ -21,19 +21,17 @@ namespace GreenHouseApp.Views
         public AddPlant()
     {
             InitializeComponent();
-            PlantCancel = new Command(cancelPlant);
-            PlantSave = new Command(savePlant);
+           
         }
       
-        private async void cancelPlant()
-        {
-            Navigation.RemovePage(this.Navigation.NavigationStack[this.Navigation.NavigationStack.Count - 1]);
-        }
-        private async void savePlant()
+       
+        private async void savePlant(object sender, EventArgs e)
         {
             var newPlant = new Plants { Name = plantName.Text, WaterDays = Int32.Parse(plantWaterDays.Text), Description = plantDescription.Text };
             await App.Database.SaveItemAsync(newPlant);
             plantName.Text = string.Empty;
+            plantDescription.Text = string.Empty;
+            plantWaterDays.Text = string.Empty;
 
         }
 

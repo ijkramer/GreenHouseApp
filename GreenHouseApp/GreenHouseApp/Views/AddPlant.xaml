@@ -11,9 +11,8 @@
             <Entry x:Name="plantWaterDays" Text="{Binding WaterDays}" FontSize="Medium" />
             <Label Text="Description" FontSize="Medium" />
             <Editor x:Name="plantDescription" Text="{Binding Description}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" HorizontalOptions="FillAndExpand" Command="{Binding PlantCancel}"></Button>
-                <Button Text="Save"  HorizontalOptions="FillAndExpand" Command="{Binding PlantSave}"></Button>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Save"  HorizontalOptions="FillAndExpand" Clicked="savePlant"></Button>
             </StackLayout>
         </StackLayout>
     

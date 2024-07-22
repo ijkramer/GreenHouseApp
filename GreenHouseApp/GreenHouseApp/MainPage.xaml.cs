@@ -21,7 +21,7 @@ namespace GreenHouseApp
 
          private async void OnAddItem(object o)
         {
-            Navigation.PushModalAsync(new AddPlant());
+            //Navigation.PushModalAsync(new AddPlant());
             //await Navigation.PushAsync(new AddPlant());
         }
 
