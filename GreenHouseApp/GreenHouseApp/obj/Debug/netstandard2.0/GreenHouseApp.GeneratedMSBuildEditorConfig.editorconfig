@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = GreenHouseApp
-build_property.ProjectDir = C:\Users\glowi\OneDrive\Documents\Summer24\GreenHouseApp\GreenHouseApp\GreenHouseApp\
+build_property.ProjectDir = C:\Users\Calvi\Source\Repos\GreenHouseApp\GreenHouseApp\GreenHouseApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

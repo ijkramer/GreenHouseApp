@@ -2182,24 +2182,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\glowi\\.nuget\\packages\\": {},
+    "C:\\Users\\Calvi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\glowi\\OneDrive\\Documents\\Summer24\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.iOS\\GreenHouseApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.iOS\\GreenHouseApp.iOS.csproj",
       "projectName": "GreenHouseApp.iOS",
-      "projectPath": "C:\\Users\\glowi\\OneDrive\\Documents\\Summer24\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.iOS\\GreenHouseApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\glowi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\glowi\\OneDrive\\Documents\\Summer24\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.iOS\\GreenHouseApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\Calvi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\glowi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Calvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2213,11 +2213,16 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\glowi\\OneDrive\\Documents\\Summer24\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj": {
-              "projectPath": "C:\\Users\\glowi\\OneDrive\\Documents\\Summer24\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj"
+            "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj": {
+              "projectPath": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj"
             }
           }
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

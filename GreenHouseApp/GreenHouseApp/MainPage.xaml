@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GreenHouseApp.MainPage">
-
-    
-       
-  
-
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Button Text="Add" Clicked = "NavigateToAdd" />
-            
-          
+             x:Class="GreenHouseApp.MainPage"
+             BackgroundColor="NavajoWhite">
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="10" Margin="0,10,0,0">
+        <Label Text="Green House App" FontSize="24" HorizontalOptions="Center" TextColor="Black" Margin="0,10,0,10" TextDecorations="Underline"/>
+        <ScrollView Orientation="Vertical">
+            <Frame BorderColor="Black" CornerRadius="30" WidthRequest="400" HeightRequest="620">
+                <StackLayout x:Name="TodoItemsStack">
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+        <Button x:Name="AddBtn"
+                Text="ADD"
+                CornerRadius="10"
+                FontSize="Large"
+                TextColor="PaleVioletRed"
+                BackgroundColor="White"
+                FontAttributes="Bold"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="5,0"
+                Clicked="NavigateToAdd"
+                VerticalOptions="End"/>
     </StackLayout>
-
 </ContentPage>

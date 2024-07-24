@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GreenHouseApp.Views.AddPlant"
->
-  
-        <StackLayout Spacing="3" Padding="15">
-            <Label Text="Name" FontSize="Medium" />
-            <Entry x:Name="plantName" Text="{Binding Name}" FontSize="Medium" />
-            <Label Text="How many days between waterings?" FontSize="Medium" />
-            <Entry x:Name="plantWaterDays" Text="{Binding WaterDays}" FontSize="Medium" />
-            <Label Text="Description" FontSize="Medium" />
-            <Editor x:Name="plantDescription" Text="{Binding Description}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+             x:Class="GreenHouseApp.Views.AddPlant">
+    <StackLayout Spacing="3" Padding="15">
+        <Label Text="Name" FontSize="Medium" />
+        <Entry x:Name="plantName" FontSize="Medium" />
+        <Label Text="How many days between waterings?" FontSize="Medium" />
+        <Entry x:Name="plantWaterDays" FontSize="Medium" Keyboard="Numeric" />
+        <Label Text="Description" FontSize="Medium" />
+        <Editor x:Name="plantDescription" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
         <StackLayout Orientation="Horizontal">
-            <Button Text="Save"  HorizontalOptions="FillAndExpand" Clicked="savePlant"></Button>
-            </StackLayout>
+            <Button Text="Save" HorizontalOptions="FillAndExpand" Clicked="SavePlant" />
         </StackLayout>
-    
+    </StackLayout>
 </ContentPage>
