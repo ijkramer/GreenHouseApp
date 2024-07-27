@@ -25,30 +25,23 @@ namespace GreenHouseApp
                     Orientation = StackOrientation.Vertical,
                     Padding = new Thickness(10),
                     Margin = new Thickness(0, 5),
-                    BackgroundColor = Color.LightGray
-                };
+                    BackgroundColor = Color.FromHex("#D0F0C0")
+            };
 
-                plantLayout.Children.Add(new Label { Text = $"Name: {plant.Name}", FontSize = 18 });
+                plantLayout.Children.Add(new Label { Text = $"Name: {plant.Name}", FontSize = 18, FontAttributes = FontAttributes.Bold });
                 plantLayout.Children.Add(new Label { Text = $"Days: {plant.WaterDays}", FontSize = 18 });
                 plantLayout.Children.Add(new Label { Text = $"Description: {plant.Description}", FontSize = 18 });
 
-                var deleteButton = new Button
+                var tapGestureRecognizer = new TapGestureRecognizer();
+                tapGestureRecognizer.Tapped += async (s, e) =>
                 {
-                    Text = "Delete",
-                    BackgroundColor = Color.Red,
-                    TextColor = Color.White
+                    await Navigation.PushAsync(new PlantDetail(plant));
                 };
-                deleteButton.Clicked += async (sender, e) =>
-                {
-                    await App.Database.DeleteItemAsync(plant);
-                    LoadPlants();
-                };
+                plantLayout.GestureRecognizers.Add(tapGestureRecognizer);
 
-                plantLayout.Children.Add(deleteButton);
                 TodoItemsStack.Children.Add(plantLayout);
             }
         }
-
         private async void NavigateToAdd(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new AddPlant());

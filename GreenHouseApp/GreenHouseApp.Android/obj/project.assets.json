@@ -3834,24 +3834,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Calvi\\.nuget\\packages\\": {},
+    "C:\\Users\\ACER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.Android\\GreenHouseApp.Android.csproj",
+      "projectUniqueName": "D:\\apps\\VisualStudio\\android\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.Android\\GreenHouseApp.Android.csproj",
       "projectName": "GreenHouseApp.Android",
-      "projectPath": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.Android\\GreenHouseApp.Android.csproj",
-      "packagesPath": "C:\\Users\\Calvi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.Android\\obj\\",
+      "projectPath": "D:\\apps\\VisualStudio\\android\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.Android\\GreenHouseApp.Android.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "D:\\apps\\VisualStudio\\android\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Calvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3865,8 +3865,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj": {
-              "projectPath": "C:\\Users\\Calvi\\Source\\Repos\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj"
+            "D:\\apps\\VisualStudio\\android\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj": {
+              "projectPath": "D:\\apps\\VisualStudio\\android\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp\\GreenHouseApp.csproj"
             }
           }
         }
