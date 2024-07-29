@@ -11,6 +11,8 @@
                 <Label x:Name="plantName" FontSize="18" TextColor="DarkSlateGray"/>
                 <Label Text="Days between watering:" FontSize="18" TextColor="DarkGreen" FontAttributes="Bold"/>
                 <Label x:Name="plantWaterDays" FontSize="18" TextColor="DarkSlateGray"/>
+                <Label Text="Toggle notifications on/off"  FontSize="18" TextColor="DarkSlateGray" />
+                <Switch x:Name="notifToggle" IsToggled="True" Toggled="notifToggle_Toggled" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
                 <Label Text="Description:" FontSize="18" TextColor="DarkGreen" FontAttributes="Bold"/>
                 <Label x:Name="plantDescription" FontSize="18" TextColor="DarkSlateGray"/>
                 <Button Text="Delete" BackgroundColor="Red" TextColor="White" FontAttributes="Bold" Clicked="DeletePlant"/>

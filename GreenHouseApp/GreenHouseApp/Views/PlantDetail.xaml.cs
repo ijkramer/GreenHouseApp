@@ -1,4 +1,5 @@
 ﻿using GreenHouseApp.Models;
+using Plugin.LocalNotification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,11 +30,42 @@ namespace GreenHouseApp.Views
                 await Navigation.PopAsync();
             }
         }
+
+        
+        
         private void LoadPlantDetails()
         {
             plantName.Text = plant.Name;
             plantWaterDays.Text = plant.WaterDays.ToString();
             plantDescription.Text = plant.Description;
+        }
+
+
+
+       
+
+        private async void notifToggle_Toggled(object sender, ToggledEventArgs e)
+        {
+            if (await LocalNotificationCenter.Current.AreNotificationsEnabled() == false)
+            {
+                await LocalNotificationCenter.Current.RequestNotificationPermission();
+            }
+
+            if (notifToggle.IsToggled)
+            {
+                var notification = new NotificationRequest
+                {
+                    NotificationId = this.plant.ID,
+                    Title = "Water your " + this.plant.Name + " plant",
+                    Schedule =
+    {
+        NotifyTime = DateTime.Now,
+        RepeatType = NotificationRepeat.TimeInterval,
+        NotifyRepeatInterval = TimeSpan.FromDays(this.plant.WaterDays)
+    }
+                };
+                await LocalNotificationCenter.Current.Show(notification);
+            }
         }
     }
 }

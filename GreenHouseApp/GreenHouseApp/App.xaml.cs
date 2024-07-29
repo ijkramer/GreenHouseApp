@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -23,9 +24,13 @@ namespace GreenHouseApp
 
         public App()
         {
+
+
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+
+            
         }
 
         protected override void OnStart()
